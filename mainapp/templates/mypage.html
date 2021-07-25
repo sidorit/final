@@ -30,13 +30,14 @@
                 <hr class="my-auto" />
                 <p class="mypage-list"><span>전화번호:</span>&nbsp;&nbsp;{{user.phone}}</p>
                 <hr class="my-auto" />
+                <div style="text-align: center; padding: 3rem;" >
+                    <a class="btn btn-primary text-uppercase" href="{% url 'profile_modify'%}">정보수정</a>
+                </div>
                 {% else %}
                 <p><span style="color: rgb(41, 41, 41);">이름:</span>&nbsp;&nbsp;{{social_user}}</p>
                 {% endif %}
             </div>
-            <div style="text-align: center; padding: 3rem;" >
-                <a class="btn btn-primary text-uppercase" href="{% url 'profile_modify'%}">정보수정</a>
-            </div>
+            
         </div>
     </div>
 </main>
